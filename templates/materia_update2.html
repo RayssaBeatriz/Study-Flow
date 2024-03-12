@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/static/css/materia_update2.css">
+      <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+      <title>Study-materia</title>
+  </head>
+  <body>
+    {% extends 'base3.html' %}
+    {% block conteudo %}
+    <section class="container">
+        <h1>Editar Assunto</h1>
+              <div class="card-editar">
+                <div class="esquerda">
+                    <img src="/static/assets/img/insert-block-animate.svg" alt="imagem">
+                    <p>EIIII, psiuu! aqui você pode modificar o assunto estudado.</p>
+                </div>
+                <form action="/assunto/update/{{assunto.id}}" method="post">
+                      <h2>Mude seu <span style="color: #92E3A9;">assunto</span></h2>
+                      <div class="textfield">
+                          <label for="materia">Nome</label>
+                          <input type="text"  id="nome" name="nome" value="{{assunto.nome}}" placeholder="Digite o nome do assunto">
+                      </div>
+                      <div class="textfield">
+                          <label for="atividade">Descrição</label>
+                          <input type="text" id="descricao" name="descricao" value="{{assunto.descricao}}" placeholder="Digite a descrição do assunto">
+                      </div>
+                      <div class="textfield-2">
+                        <label for="atividade">Peso</label>
+                        <input type="text" id="peso" name="peso" value="{{assunto.peso}}" placeholder="Digite o peso do assunto">
+                    </div>
+                    <div class="textfield-3">
+                        <label for="atividade">Descrição</label>
+                        <input type="text" id="nf" name="nf" value="{{assunto.nf}}" placeholder="Digite o nível de afinidade">
+                    </div>
+                      <input class="btn-cadastro" type="submit" value="atualizar">
+                </form>
+              </div>
+    </section>
+    {% endblock%}
+  </body>
+</html>

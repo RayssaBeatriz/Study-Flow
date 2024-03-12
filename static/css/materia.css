@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: #201B2C ;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+.tudo{
+    position: absolute;
+    width: 1135px;
+    height: 976px;
+    left: 281px;
+    top: 24px;
+
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+h1{
+  position: absolute;
+  width: 450px;
+  height: 68px;
+  left: 333px;
+  top: 74px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 68px;
+  
+  color: rgba(11, 11, 11, 0.6);
+}
+
+.ret42{
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  left: 347px;
+  top: 201px;
+
+}
+
+.ad_mat p{
+  position: absolute;
+  width: 152px;
+  height: 24px;
+  left: 374px;
+  top: 206px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #CEABDF;
+  text-decoration: none;
+}
+
+i{
+  position: absolute;
+  left: 333px;
+  top: 219px;
+  font-size: 32px;
+  color: #CEABDF;
+}
+
+.assunto{
+  position: absolute;
+  width: 350px;
+  height: 178px;
+  left: 333px;
+  top: 291px;
+  background: #EEDFF4;
+}
+
+.assuntos{
+  width: 350px;
+  height: 178px;
+  background: #EEDFF4;
+  border-radius: 20px;
+  margin-bottom: 45px
+  
+}
+
+.p1{
+  position: relative;
+  width: 170px;
+  height: 24px;
+  left: 182px;
+  top: 26px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: rgba(11, 11, 11, 0.75);
+}
+
+.p2{
+  position: relative;
+  width: 156px;
+  height: 33px;
+  left: 182px;
+  top: 29px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 10px;
+  
+  color: rgba(11, 11, 11, 0.75);
+}

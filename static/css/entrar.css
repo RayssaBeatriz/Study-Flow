@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.main-default{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    height: 1021px;
+}
+
+.box{
+    position:absolute;
+    width: 700px;
+    height: 300px;
+    left: 350px;
+    top: 300px;
+    background: #EFDDF8;
+    border-radius: 30px;
+}
+
+.box p{
+    position: relative;
+    width: 424px;
+    height: 210px;
+    left: 138px;
+    top: 60px;
+    font-style: italic;
+    font-weight: 275;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+}
+
+#img{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left: 550px;
+  top: 670px;
+}

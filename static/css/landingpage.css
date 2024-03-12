@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+body{
+    background-color: rgba(32, 27, 44, 1);
+}
+
+.tudo{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.esquerda h1{
+    position: absolute;
+    width: 630px;
+    height: 166px;
+    left: 117px;
+    top: 284px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+
+    color: #FAFAFA;
+}
+
+.esquerda span{
+    color: #FEF5A9
+}
+
+.esquerda p{
+    position: absolute;
+    width: 530px;
+    height: 144px;
+    left: 117px;
+    top: 479px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: rgba(250, 250, 250, 0.9);
+}
+
+.saibamais{
+    position: absolute;
+    width: 223px;
+    height: 47px;
+    left: 117px;
+    top: 707px;
+
+    background: rgba(254, 245, 169, 0.9);
+    border-radius: 8px;
+}
+
+.esquerda a{
+    position: absolute;
+    left: 54px;
+    top: 8px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration: none;
+
+    color: #0B0B0B;
+
+}
+
+.direita img{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 813px;
+    top: 215px;
+}
+
+.linha{
+    position: absolute;
+    width: 1021px;
+    left: 209px;
+    top: 879px;
+}

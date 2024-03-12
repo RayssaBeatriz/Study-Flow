@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Dashboard</title>
+</head>
+<body>
+    <section class="navegation">
+        <img src="/static/assets/img/logotipo.png" alt="logo study flow">
+        <nav class="menu">
+            <ul>
+                <li><img class="icon" src="/static/assets/img/Vector.png" alt="imagem"><a href="/">Meu Flow</a></li>
+                <li><img class="icon" src="/static/assets/img/book-alt 1.png" alt="imagem"><a href="/assunto">Assuntos</a></li>
+                <li><img class="icon" src="/static/assets/img/bell 1.png" alt="imagem"><a href="#">Lembretes</a></li>
+                <li><img class="icon" src="/static/assets/img/comment-alt 1.png" alt="imagem"><a href="/sugestoes2">Sugestões</a></li>
+                <li><img class="icon" src="/static/assets/img/user 1.png" alt="imagem"><a href="#">Perfil</a></li>
+                <li class="sair"><img class="icon" src="/static/assets/img/exit 1.png" alt="imagem"><a href="{{url_for('usuarios.logoff')}}">Sair</a></li>
+            </ul>
+        </nav>
+        <div class="user">
+            <img src="/static/assets/img/image 1.png" alt="foto do usuario">
+            <p>{{current_user.nome}}</p>
+            <a href="#">{{current_user.email}}</a>
+        </div>
+    </section>
+    
+    <main class="container">
+        <section>
+            <div class="h-esquerda">
+                <h1>Dashboard</h1>
+                <p><span>Segunda-feira</span>, 06 outubro 2022</p>
+            </div>
+            <div class="h-direita">
+                <img src="/static/assets/img/bell 2.svg" alt="icon">
+                <div class="quadrado">
+                    <p>kv</p>
+                </div>
+                <div class="nome_user">
+                    <a href="#">{{current_user.nome}}</a>
+                    <img src="/static/assets/img/211690_up_arrow_icon 3.png" alt="seta">
+                </div>
+            </div>
+            <div class="box">
+                <h2>Oi, {{current_user.nome}}!</h2>
+                <p>Pronto para organizar os seus estudos com o melhor método?</p>
+                <img src="/static/assets/img/Low code development-bro 1.png" alt="imagem_grande">
+            </div>
+        </section>
+        <section class="container1">
+            <div class="esquerda">
+                <h3>Atvidades feitas</h3>
+                <div class="box2">
+                    <img class="img1" src="/static/assets/img/Reading glasses-bro (1) 4.png" alt="estudo">
+                    <h4>Nome da atividade</h4>
+                    <p class="p1">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit.</p>
+                    <p class="contagem">10 dias</p>
+                    <p class="p2">Nível de AF: <span> Alto</span>  | Peso: <span>Baixo</span> </p>
+                    <img class="img2" src="/static/assets/img/1370026_bin_delete_remove_trash_trash bin_icon 1.png" alt="lixeira">
+                </div>
+            </div>
+            <div class="direita">
+                <h3>Meu Flow</h3>
+                <p>Seu ciclo de estudos criado especialmente para você.</p>
+              <div>
+                  <canvas class="ciclo" id="myChart"></canvas>
+              </div>
+            </div>
+    </main>
+</body>
+</html>

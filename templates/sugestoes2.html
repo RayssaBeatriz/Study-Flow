@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/sugestoes2.css">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>Sugestões</title>
+</head>
+<body>
+  {%extends 'base3.html'%}
+  {%block conteudo%}
+    <div class="tudo">
+        <h1>Sugestões</h1>
+        <div class="conteiner">
+            <div class="esquerda">
+                <img class="lampada" src="/static/assets/lâmpada.png" alt="lâmpada">
+                <h3>Nos ajude a melhorar!</h3>
+                <p class="p1">Sua sugestão é de extrema importância <br> 
+                    para o nosso crescimento</p>
+            </div>
+            <form action='/recebe_sugestoes' method="get">
+                <h2>Deixe aqui sua  <span>sugestão!</span> </h2>
+
+                <label class="label1" for="nome1">Nome</label>
+                <input type="text" class="nome" name="nome">
+
+                <label class="label2" for="email">E-mail</label>
+                <input type="email" class="email" name="email">
+
+                <label class="label3" for="sugestoes">Sugestões</label>
+                <input type="text" class="sugestoes">
+                
+                <input class="enviar" type="submit" name="enviar" value="Enviar">
+            </form>
+        </div>
+    </div>
+  {%endblock%}
+</body>
+</html>

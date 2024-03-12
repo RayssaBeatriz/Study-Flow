@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #201B2C;
+    width: 1440px;
+    height: 1024px;
+}
+
+.container{
+    position: absolute;
+    width: 1135px;
+    height: 976px;
+    left: 281px;
+    top: 24px;
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+.container > h1{
+    position: absolute;
+    left: 52px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+    color: rgba(11, 11, 11, 0.6);
+}
+
+.box{
+    box-sizing: border-box;
+    position: absolute;
+    width: 630px;
+    height: 682px;
+    left: 252px;
+    top: 213px;
+    background: #201B2C;
+    border: 2px solid #BA68C8;
+    box-shadow: -1px 8px 50px rgba(186, 104, 200, 0.5);
+    border-radius: 20px;
+}
+
+.box > img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 115px;
+    top: 12px;
+}
+
+.box > p{
+    position: absolute;
+    width: 499px;
+    height: 114px;
+    left: 66px;
+    top: 414px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    color: rgba(202, 202, 202, 0.75);
+}
+
+.box > form > input{
+    box-sizing: border-box;
+    position: absolute;
+    width: 156px;
+    height: 45px;
+    left: 103px;
+    top: 581px;
+    background: rgba(146, 227, 169, 0.9);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(11, 11, 11, 0.75);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.box > form > input:hover{
+    background: #92E3A9;
+}
+
+.box > a{
+    position: absolute;
+    width: 156px;
+    height: 45px;
+    left: 371px;
+    top: 581px;
+    background: rgba(240, 87, 124, 0.9);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(11, 11, 11, 0.75);
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.box > a:hover{
+    background: #F0577C;
+}

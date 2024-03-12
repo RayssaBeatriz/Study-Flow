@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: #201B2C ;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+.tudo{
+    position: absolute;
+    width: 1135px;
+    height: 976px;
+    left: 281px;
+    top: 24px;
+
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+h1{
+    position: absolute;
+    width: 242px;
+    height: 68px;
+    left: 52px;
+    top: 50px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+
+    color: rgba(11, 11, 11, 0.6);
+}
+
+.conteiner{
+    position: absolute;
+    width: 899px;
+    height: 532px;
+    left: 118px;
+    top: 232px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.esquerda{
+    position: absolute;
+    width: 376px;
+    height: 532px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(239, 221, 248, 0.3);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.lampada{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 38px;
+    top: 116px;
+
+}
+
+h3{
+    position: absolute;
+    height: 21px;
+    left: 96px;
+    top: 424px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.p1{
+    position: absolute;
+    width: 294px;
+    height: 36px;
+    left: 41px;
+    top: 459px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+h2{
+    position: absolute;
+    width: 329px;
+    height: 38px;
+    left: 472px;
+    top: 44px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+span{
+    color: #CEABDF;
+}
+
+.label1{
+    position: absolute;
+    width: 37px;
+    height: 18px;
+    left: 453px;
+    top: 141px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.nome{
+    position: absolute;
+    width: 170px;
+    height: 49px;
+    left: 453px;
+    top: 164px;
+
+    background: #EFDDF8;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.label2{
+    position: absolute;
+    width: 41px;
+    height: 18px;
+    left: 653px;
+    top: 141px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.email{
+    position: absolute;
+    width: 170px;
+    height: 49px;
+    left: 653px;
+    top: 164px;
+
+    background: #EFDDF8;
+    border-radius: 8px;
+    border: 0px;
+}
+
+.label3{
+    position: absolute;
+    width: 58px;
+    height: 18px;
+    left: 453px;
+    top: 247px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.sugestoes{
+    position: absolute;
+    width: 370px;
+    height: 119px;
+    left: 453px;
+    top: 268px;
+
+    background: #EFDDF8;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.enviar{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 160px;
+    height: 47px;
+    left: 558px;
+    top: 442px;
+    border: 1px solid #AF60FF;
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(43, 19, 75, 0.8);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.enviar:hover{
+   background: #EFDDF8;
+}

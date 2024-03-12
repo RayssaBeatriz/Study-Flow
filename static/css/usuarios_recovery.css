@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+*{
+  margin: 0;
+}
+
+main-usuarios{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  height: 1806px;
+}
+
+main{
+  font-family: 'Poppins';
+  font-style: normal;
+}
+
+h1{
+  position: absolute;
+  width: 639px;
+  height: 144px;
+  left: 405px;
+  top: 262px;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #000000;
+}
+
+li{
+  position: absolute;
+  width: 773px;
+  height: 325px;
+  left: 140px;
+  top: 504px;
+  
+  background: #EFDDF8;
+  border-radius: 30px;
+}
+
+li h3{
+    position: absolute;
+    width: 231px;
+    height: 36px;
+    left: 271px;
+    top: 32px;
+    
+    font-size: 24px;
+    line-height: 36px;
+    color: #AF60FF; 
+}
+
+li .p1{
+  position: absolute;
+  width: 676px;
+  height: 252px;
+  top: 95px;
+  left: 150px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+li .p2{
+  position: absolute;
+  width: 676px;
+  height: 252px;
+  top: 130px;
+  left: 115px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+li .p3{
+  position: absolute;
+  width: 676px;
+  height: 252px;
+  top: 167px;
+  left: 78px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+li .p4{
+  position: absolute;
+  width: 676px;
+  height: 252px;
+  top: 203px;
+  left: 42px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+li a{
+  position: absolute;
+  width: 120px;
+  height: 47px;
+  top: 247px;
+
+  background: #AF60FF;
+  border-radius: 8px;
+}
+
+li .a1{
+  left: 258px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0B0B0B;
+}
+
+li .a2{
+  left: 411px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0B0B0B;
+  text-align: center;
+}

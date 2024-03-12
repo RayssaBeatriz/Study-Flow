@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/base2.css">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>base</title>
+</head>
+<body>
+    <header class="container-1">
+        <section class="box-menu">
+          <img src="static/assets/img/logotipo.png" alt="logo-study">
+          <nav class="menu">
+            <ul>
+                <li><a href="/">Página inicial</a></li>
+                <li><a href="/sobre_nos">Sobre nós</a></li>
+                <li><a href="/sugestoes">Sugestões</a></li>
+            </ul>
+            <div class="btn-cadastro1">
+                <a href="/cadastro">Cadastro</a>
+            </div>
+            <div class="btn-login">
+                <a href="/login">Login</a>
+            </div>
+          </nav>
+        </section>
+    </header>
+  
+    <main>
+        {% block conteudo %}
+        {% endblock %}
+    </main>
+  
+    <footer class="rodape">
+        <p>© 2022 Site desenvolvido pela study - Criadora de Métodos de Estudos | IFRN</p>
+    </footer>
+</body>
+</html>

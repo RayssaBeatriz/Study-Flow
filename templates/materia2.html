@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/matéria2.css">
+    <script src="https://kit.fontawesome.com/242b405b2d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>Meus Estudos</title>
+</head>
+<body>
+  {%extends 'base3.html'%}
+  {%block conteudo%}
+    <section class="container">
+        <h1>Meus Estudos</h1>
+        <a class= 'ad_mat' href = '/assunto/create'>
+            <i class="fa-solid fa-plus"></i>
+            <p claas= 'ad_ass'>Adicionar assunto</p> 
+        </a>
+      <span class="bastao">|</span>
+        <a class= 'ad_ciclo' href = '/ciclo/create'>
+            <p claas= 'ad_ciclo'>Adicionar ciclo</p> 
+        </a>
+        <div class= 'assunto'>
+            {% for a in assunto %}  
+                <div class="assuntos"> 
+                  <img src="/static/assets/img/Reading glasses-bro (1) 1.svg" alt="imagem estudo">
+                  <p class="p1">{{a.nome}}</p> 
+                  <p class="p2">{{a.descricao}}</p>
+                  <p class="p3">Nível AF: <strong>{{a.nf}}</strong> | Peso: <strong>{{a.peso}}</strong></p>
+                  <img class="arrow" src="/static/assets/img/2203523_arrow_back_botton_left_icon 1.svg" alt="seta">
+                  <a class= 'button' href="/assunto/update/{{a.id}}">editar</a> 
+                  <a class= 'button'href="/assunto/delete/{{a.id}}">excluir</a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="direita">
+            <p class="filtro">Filtrar:</p>
+            <select class="box3"> 
+                <option disabled selected>Nível de afinidade </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select class="box3"> 
+                <option disabled selected>Peso do assunto </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <input placeholder= 'Pesquise seu assunto'><img class="lupa" src="/static/assets/img/115695_magnifying glass_zoom_find_search_icon 1.png" alt="lupa"></input>
+        </div>
+    </section>
+  {%endblock%}
+</body>
+</html>

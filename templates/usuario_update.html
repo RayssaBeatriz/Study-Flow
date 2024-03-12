@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/static/css/cadastro.css">
+      <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+      <title>Study-cadastro</title>
+  </head>
+  <body>
+    <section class="main-cadastro">
+        <div class="left-cadastro">
+            <h1>Modifique seus dados <br> do <span>study</span> </h1>
+            <img src="/static/assets/svg-cadastro.svg" class="left-image" alt="imagem login">
+        </div>
+        <div class="right-cadastro">
+              <div class="card-cadastro">
+                  <form action="/usuarios/update/{{usuario.id}}" method="post">
+                      <h1>Mude seus dados</h1>
+                      <div class="textfield-2">
+                          <label for="usuario">Usuário</label>
+                          <input type="text"  id="usuario" name="nome" value="{{usuario.nome}}" placeholder="Usuário">
+                      </div>
+                      <div class="textfield-2">
+                          <label for="email">E-mail</label>
+                          <input type="email" id="email" name="email" value="{{usuario.email}}" placeholder="email" >
+                      </div>
+                      <div class="textfield-2">
+                          <label for="senha">Senha</label>
+                          <input type="password" id="senha" name="senha" value="" placeholder="Senha">
+                      </div>
+                      <div class="textfield-2">
+                          <label for="senha">Confirmar senha</label>
+                          <input type="password" id="senha" name="senha2" placeholder="Digite a senha novamente">
+                      </div>
+                      <input class="btn-cadastro" type="submit" value="confirmar">
+                  </form>
+              </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <p>© 2022 Site desenvolvido pela study - Criadora de Métodos de Estudos | IFRN</p>
+    </footer>
+  </body>
+</html>

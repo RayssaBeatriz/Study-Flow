@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #201B2C;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    width: 1135px;
+    height: 976px;
+    left: 281px;
+    top: 24px;
+    background: #FAFAFA;
+    border-radius: 20px;
+}
+
+.container > h1{
+    position: absolute;
+    left: 52px;
+    top: 50px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+    color: rgba(11, 11, 11, 0.6);
+}
+  
+.ad_mat > p{
+    position: absolute;
+    left: 55px;
+    top: 181px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #CEABDF;
+}
+
+.ad_ciclo > p{
+    position: absolute;
+    left: 270px;
+    top: 181px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #CEABDF;
+}
+
+.bastao{
+    position: absolute;
+    left: 256px;
+    top: 181px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #CEABDF;
+}
+.ad_mat > i{
+    position: absolute;
+    left: 52px;
+    top: 176px;
+    font-size: 32px;
+    color: #AF60FF;
+    border-radius: 25px;
+}
+
+.direita{
+    position: absolute;
+    left: 804px;
+    top: 80px;
+}
+
+.filtro{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.box3{
+    position: relative;
+    width: 100px;
+    height: 34px;
+    left: 40px;
+    bottom: 27px;
+    background: rgba(175, 96, 255, 0.35);
+    border-radius: 5px;
+    margin-left: 23px;
+}
+
+.direita > input{
+    position: relative;
+    width: 219px;
+    height: 26px;
+    left: 65px;
+    top: 55px;
+    background: rgba(175, 96, 255, 0.35);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.lupa{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 270px;
+    top: 118px;
+}
+
+.assunto{
+  width: 0;
+  height: 0;
+  
+}
+
+.assuntos{
+    position: relative;
+    width: 350px;
+    height: 178px;
+    left: 52px;
+    top: 267px;
+    background: #EEDFF4;
+    border-radius: 20px;
+    margin-bottom: 45px
+}
+
+.assuntos:hover{
+  border: 1px solid #AF60FF;
+}
+.assuntos > img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 14px;
+    top: 14px;
+}
+
+.p1{
+    position: absolute;
+    left: 182px;
+    top: 26px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.p2{
+    position: absolute;
+    width: 156px;
+    height: 33px;
+    left: 182px;
+    top: 59px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(11, 11, 11, 0.75);
+}
+
+.p3{
+    position: absolute;
+    left: 182px;
+    top: 111px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(11, 11, 11, 0.75);
+
+}
+
+.assuntos > .arrow{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 312px;
+    top: 148px;
+}
+
+.assuntos > .button{
+    position: relative;
+    width: 56px;
+    height: 15px;
+    left: 177px;
+    top: 140px;
+    background: #EFDDF8;
+    border: 1px solid rgba(175, 96, 255, 0.8);
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(43, 19, 75, 0.8);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2px 8px;
+    margin-left: 5px;
+}

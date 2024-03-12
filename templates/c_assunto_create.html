@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/c_assunto_create.css">
+    <script src="https://kit.fontawesome.com/242b405b2d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>Meus Estudos</title>
+</head>
+<body>
+  {%extends 'base3.html'%}
+  {%block conteudo%}
+    <section class="container">
+        <h1>Meus assuntos</h1>
+        <a class= 'ad_mat'>
+            <p claas= 'ad_ass'>Escolha os assuntos que farão parte do seu ciclo</p> 
+        <form class= 'assunto' action="/c_assunto/create" method="post">
+            {% for a in assunto %}  
+                <div class="assuntos"> 
+                  <input type="checkbox" class="checkbox" name="checkbox" value= {{a.id}}>
+                  <label for="checkbox">{{a.nome}}</label>
+                </div>
+            {% endfor %}
+          <input class="btn-concluir" type="submit" value="Concluir">
+        </form>
+        <div class="direita">
+            <p class="filtro">Filtrar:</p>
+            <select class="box3"> 
+                <option disabled selected>Nível de afinidade </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <select class="box3"> 
+                <option disabled selected>Peso do assunto </option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <input placeholder= 'Pesquise seu assunto'><img class="lupa" src="/static/assets/img/115695_magnifying glass_zoom_find_search_icon 1.png" alt="lupa"></input>
+        </div>
+    </section>
+  {%endblock%}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="static/css/usuarios_recovery.css">
+  <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+  <title>Dados interno do sistema</title>
+</head>
+<body>
+  <main>
+    {% block conteudo %}
+      <section class="main-usuarios">
+        <h1>Tabela de dados dos usuários</h1>
+        <ul>
+      	{% for u in usuarios %}
+      		<li> <h3>{{u.nome}}</h3> <p class="p1">{{u.id}}</p> </br> <p class="p2">{{u.email}}</p></br> <p class="p3">{{u.admin}}</p></br> <p class="p4">{{u.senha}}</p></br>
+                  <a style="text-decoration:none" class="a1" href="/usuarios/update/{{u.id}}">EDITAR</a> 
+          <a class="a2" style="text-decoration:none" href="/usuarios/delete/{{u.id}}">DELETAR</a>
+          </li> 
+      	{% endfor %}
+      	</ul>
+          <img class="imagem" src= "/static/assets/meninaemlivro.png">
+      </section>
+    {%endblock%}
+  </main>
+</body>
+</html>

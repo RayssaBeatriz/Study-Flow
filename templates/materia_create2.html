@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/materia_create2.css">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>Cadastro de assunto</title>
+</head>
+<body>
+   {% extends 'base3.html' %}
+   {% block conteudo %}
+    <section class="container">
+        <div class="box-form">
+            <form action="/assunto/create" method="post">
+                <div class="esquerda">
+                    <img src="/static/assets/img/Creation process-bro (1) 2.png" alt="imagem form">
+                </div>
+                <div class="direita">
+                    <h2>Cadastre Seu <span>Assunto!</span></h2>
+                    <div class="textfield">
+                        <label for="materia">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Insira o nome do assunto aqui">
+                    </div>
+                    <div class="textfield">
+                        <label for="atividade">Descrição</label>
+                        <input type="text" id="descricao" name="descricao" placeholder="Insira uma breve descrição aqui">
+                    </div>
+                    </p>
+                    <p class="inferior">
+                        <label for="nf">Nível de afinidade</label>
+                        <select name="nf">
+                          <option value=3>Baixo</option>
+                          <option value=2>Médio</option>
+                          <option value=1>Alto</option>
+                        </select>
+                    </p>
+                </div>
+                <input class="btn-cadastro" type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </section>
+    {% endblock%}
+</body>
+</html>

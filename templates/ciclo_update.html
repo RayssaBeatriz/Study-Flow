@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/static/assets/img/favicon-16x16.png">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base3.html' %}
+    {% block conteudo %}
+    <section class="container">
+        <h1>Editar Ciclo</h1>
+              <div class="card-editar">
+                <div class="esquerda">
+                    <img src="/static/assets/img/insert-block-animate.svg" alt="imagem">
+                    <p>EIIII, psiuu! aqui você pode modificar o seu flow.</p>
+                </div>
+                <form action="/ciclo/update/{{ciclo.id}}" method="post">
+                      <h2>Mude seu <span style="color: #92E3A9;">flow</span></h2>
+                      <div class="textfield">
+                          <label for="ciclo">Nome</label>
+                          <input type="text"  id="nome" name="nome" value="{{ciclo.nome}}" placeholder="Digite o nome do flow">
+                      </div>
+                      <div class="textfield">
+                          <label for="atividade">Duração</label>
+                          <input type="text" id="duracao" name="duracao" value="{{ciclo.duracao}}" placeholder="Digite a duração do flow">
+                      </div>
+                      <input class="btn-cadastro" type="submit" value="atualizar">
+                </form>
+              </div>
+    </section>
+    {% endblock%}
+</body>
+</html>
